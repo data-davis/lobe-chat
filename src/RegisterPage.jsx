@@ -1,0 +1,4 @@
+{
+  path: '/register',
+  element: <RegisterPage />
+}
