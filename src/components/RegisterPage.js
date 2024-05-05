@@ -1,38 +1,15 @@
-import React, { useState } from 'react';
-
-const RegisterPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
-
-  const handleRegister = async () => {
-    // 调用注册API发送注册请求
-  };
-
-  return (
-    <div>
-      <h2>注册</h2>
-      <input
-        type="text"
-        placeholder="用户名"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="密码"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="邮箱"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <button onClick={handleRegister}>注册</button>
-    </div>
-  );
-};
-
-export default RegisterPage;
+<html>
+  <head>
+    <title>Register Page</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form>
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
